@@ -1,0 +1,67 @@
+*{
+    font-family: "微软雅黑";
+} 
+
+body{
+    background: #f1f2f7;
+}
+
+.logo,.logo > span{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#ios,#android{
+    cursor: pointer;
+}
+
+table > tbody > tr > td{
+    text-align: center;
+}
+
+table > thead > tr > th{
+    text-align: center;
+}
+
+.headLabel{
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.ver-right-header{
+    float: right;margin-left: 10px;
+}
+.to-trash{
+    height:34px;
+    display: none;
+    align-items: center;
+}
+.to-trash button{
+}
+.delete{
+    float: right;
+    cursor: pointer;
+    /*color: #79798D;*/
+}
+.gray-group + div .to-trash{
+    display: flex;
+}
+.gray{
+    margin-right: 20px;
+}
+
+.grayDiv{
+    // width: 200px;
+    // height: 100px;
+    background: white;    
+    position: absolute;
+    right: 80px;
+    top: 43px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !important;
+    padding: 10px;
+    display: none;
+}
+
+.graySubmit{
+    width: 100%;
+    margin-top: 10px;
+}

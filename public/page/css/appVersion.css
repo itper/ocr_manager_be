@@ -1,0 +1,48 @@
+*{
+    font-family: "微软雅黑";
+}   
+
+body{
+    background: #f1f2f7;
+} 
+
+.logo,.logo > span{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+table > tbody > tr > td{
+    text-align: center;
+}
+
+table > thead > tr > th{
+    text-align: center;
+}
+
+.navSe{
+    margin-bottom: 0px;
+}
+
+.none{
+    display: none;
+}
+
+.tableName{
+    margin-right: 10px;
+}
+
+#versionList,#h5List{
+    cursor: pointer;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.add{
+    color: white;
+    float: right;
+    height: 37px;
+    line-height: 37px;
+    margin-right: 10px;
+    cursor: pointer;
+}

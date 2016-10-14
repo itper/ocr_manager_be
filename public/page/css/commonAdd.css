@@ -1,0 +1,38 @@
+*.{
+    font-family: "微软雅黑";
+}
+
+body{
+    background: #f1f2f7;
+}
+
+.logo,.logo > span{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.funCheck > label{
+    height: 21px;
+}
+
+
+#patchFile{
+    border-bottom: 1px solid #eff2f7;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.patchType{
+    font-size: 14px;
+    text-align: left;
+    font-weight: 300;
+    margin-left: -15px;
+}
+
+.patchSelect{
+    width: 102%;
+    margin-left: 5px;
+}
+
+#addPatchSave{
+    margin-left: -10px;
+}

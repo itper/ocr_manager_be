@@ -1,0 +1,15 @@
+#main-content{
+    margin-left: 180px;
+}
+body{
+    background: #f1f2f7;
+}
+#main-content .wrapper>div{
+    position:relative;
+    height:100%;
+    display: none;
+}
+#main-content .wrapper>div>iframe {
+    width:100%;
+    height:100%;
+}

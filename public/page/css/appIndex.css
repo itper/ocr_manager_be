@@ -1,0 +1,63 @@
+// *{
+//     font-family: "微软雅黑";
+// }
+
+body{
+    background: #f1f2f7;
+}
+
+.color0{background: #8175C7;}
+.color1{background: #6CCAC9;}
+.color2{background: #FF6C60;}
+.color3{background: #F9DA65;}
+.color4{background: #57C8F2;}
+.color5{background: #41CAC0;}
+.color6{background: #A9D96C;}
+
+.panel{
+    height: 100px;
+    cursor: pointer;
+}
+
+.appIcon{
+    line-height: 100px;
+    font-size: 51px;
+    color: white;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px 0 0 4px;
+}
+
+.h5Click{
+    float: left;
+    background-color: red;
+    margin-left: -19px;
+}
+
+.appName{
+    flex:1;
+    text-align: center;
+    background-color: white;
+    border-radius: 0 4px 4px 0;
+    color: #C6CAD6;
+    height: 100px;
+}
+
+.appName > h1{
+    font-size: 25px;
+   
+    z-index: -2;
+}
+
+.appName > p{
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+
+.addApp{
+    float: right;
+    cursor: pointer;
+}
+
