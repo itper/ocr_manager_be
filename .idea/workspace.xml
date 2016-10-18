@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47817068-e10a-41f5-851a-936a9cd130c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/lib/user_valid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/position/add-position.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/position/add-position.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/position/position-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/position/position-list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/admin.html" afterPath="$PROJECT_DIR$/public/app/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/company/add-company.html" afterPath="$PROJECT_DIR$/public/app/company/add-company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/company/company-list.html" afterPath="$PROJECT_DIR$/public/app/company/company-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/company/company-list.js" afterPath="$PROJECT_DIR$/public/app/company/company-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.js" afterPath="$PROJECT_DIR$/public/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/lib/common-post.js" afterPath="$PROJECT_DIR$/public/app/lib/common-post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/lib/initpage.js" afterPath="$PROJECT_DIR$/public/app/lib/initpage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/ocr/add-ocr.html" afterPath="$PROJECT_DIR$/public/app/ocr/add-ocr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/ocr/add-ocr.js" afterPath="$PROJECT_DIR$/public/app/ocr/add-ocr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/ocr/ocr-list.html" afterPath="$PROJECT_DIR$/public/app/ocr/ocr-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/ocr/ocr-list.js" afterPath="$PROJECT_DIR$/public/app/ocr/ocr-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/user/add-user.html" afterPath="$PROJECT_DIR$/public/app/user/add-user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/user/user-list.html" afterPath="$PROJECT_DIR$/public/app/user/user-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/user/user-list.js" afterPath="$PROJECT_DIR$/public/app/user/user-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/page/assets/bootstrap-datepicker/js/bootstrap-datepicker.js" afterPath="$PROJECT_DIR$/public/page/assets/bootstrap-datepicker/js/bootstrap-datepicker.js" />
     </list>
     <ignored path="ocr_be.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,6 +24,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#aside#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#9;n#section#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1476800217000" expanded="true" signature="595:609" placeholder="..." />
+                <marker date="1476800217000" expanded="true" signature="646:660" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="user-list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/user/user-list.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,21 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/user/user-list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ocr-list.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/app/ocr/ocr-list.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -181,7 +173,6 @@
         <option value="$PROJECT_DIR$/public/app/company/add-company.html" />
         <option value="$PROJECT_DIR$/public/app/ocr/ocr-list.html" />
         <option value="$PROJECT_DIR$/public/app/company/company-list.html" />
-        <option value="$PROJECT_DIR$/public/app/admin.html" />
         <option value="$PROJECT_DIR$/public/app/position/position-list.html" />
         <option value="$PROJECT_DIR$/public/app/position/add-position.html" />
         <option value="$PROJECT_DIR$/public/app/lib/common-post.js" />
@@ -195,6 +186,7 @@
         <option value="$PROJECT_DIR$/public/app/login.js" />
         <option value="$PROJECT_DIR$/public/app/index.js" />
         <option value="$PROJECT_DIR$/public/app/user/user-list.html" />
+        <option value="$PROJECT_DIR$/public/app/admin.html" />
       </list>
     </option>
   </component>
@@ -460,12 +452,12 @@
       <updated>1476414711817</updated>
       <workItem from="1476414712929" duration="528000" />
       <workItem from="1476415460007" duration="9583000" />
-      <workItem from="1476674027630" duration="35901000" />
+      <workItem from="1476674027630" duration="36412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46012000" />
+    <option name="totallyTimeSpent" value="46523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="6" />
@@ -473,11 +465,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.50528544" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2554054" sideWeight="0.5081043" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4947146" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2554054" sideWeight="0.4918957" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -519,8 +511,8 @@
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1476781124000" expanded="true" signature="595:609" placeholder="..." />
-            <marker date="1476781124000" expanded="true" signature="646:660" placeholder="..." />
+            <marker date="1476800217000" expanded="true" signature="595:609" placeholder="..." />
+            <marker date="1476800217000" expanded="true" signature="646:660" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -708,26 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="165" column="50" selection-start-line="165" selection-start-column="50" selection-end-line="165" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#aside#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#9;n#section#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1476781124000" expanded="true" signature="595:609" placeholder="..." />
-            <marker date="1476781124000" expanded="true" signature="646:660" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/position/add-position.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
@@ -874,6 +846,26 @@
         <state relative-caret-position="170">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#aside#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#9;n#section#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1476800217000" expanded="true" signature="595:609" placeholder="..." />
+            <marker date="1476800217000" expanded="true" signature="646:660" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
