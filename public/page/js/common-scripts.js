@@ -1,7 +1,26 @@
 var Script = function () {
 
-
-
+    $('#sidebar .sub-menu li > a').click(function(e){
+        if ($('#sidebar > ul').is(":visible") === true) {
+            $('#main-content').css({
+                'margin-left': '0px'
+            });
+            $('#sidebar').css({
+                'margin-left': '-180px'
+            });
+            $('#sidebar > ul').hide();
+            $("#container").addClass("sidebar-closed");
+        } else {
+            $('#main-content').css({
+                'margin-left': '180px'
+            });
+            $('#sidebar > ul').show();
+            $('#sidebar').css({
+                'margin-left': '0'
+            });
+            $("#container").removeClass("sidebar-closed");
+        }
+    })
 //    sidebar dropdown menu
 
     jQuery('#sidebar .sub-menu > a').click(function () {
