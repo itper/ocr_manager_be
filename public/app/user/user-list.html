@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+
+        <div class=" " id="user-list">
+            <div class="panel-body">
+                <div class="btn-group btn-group-justified" id="select-type">
+                    <a class="btn btn-info active" href="#" id='select-stu' data-val=1>学生</a>
+                    <a class="btn btn-info" href="#" id="select-cp" data-val=2>企业用户</a>
+                    <a class="btn btn-info" href="#" id='select-tec' data-val=3>教师</a>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                    </header>
+                    <table class="table table-striped table-advance table-hover">
+                        <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>电话</th>
+                            <th>类型</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody id="list">
+
+                        </tbody>
+                    </table>
+
+                </section>
+                <div class="text-center">
+
+                    <ul class="pagination">
+                        <li><a href="#" class="pre-next-page" data-type=1>«</a></li>
+                        <li><a href="#" id="current-page">1</a></li>
+                        <li><a href="#" class="pre-next-page">»</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="oper-td hide">
+                <!--<button class="btn btn-primary btn-xs"><i class="icon-pencil"></i></button>-->
+                <button class="btn btn-danger btn-xs"><i class="icon-trash "></i></button>
+            </div>
+            <div class="app-oper-td hide">
+                <!--<button class="btn btn-primary btn-xs"><i class="icon-pencil"></i></button>-->
+                <button class="btn   btn-info btn-xs tooltips" type="1" data-placement="top" data-toggle="tooltip" data-original-title="添加成员" href="#add-user-dialog"><i class="icon-plus "></i></button>
+                <button class="btn   btn-info btn-xs tooltips" type="2" data-placement="top" data-toggle="tooltip" data-original-title="成员" href="#add-user-dialog"><i class="icon-group "></i></button>
+            </div>
+        </div>
+
+        <section>
+        <div class="modal fade" tabindex="-1" id="update-user-dialog" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+             style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">用户</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-lg-12">
+                            <header class="panel-heading">
+                            </header>
+
+                            <section class="panel">
+                                <div class="panel-body">
+                                    <form class="form-horizontal tasi-form" id="add-user-form">
+
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2" for="inputSuccess">名称</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control  error" id="username" type="text" name="name" required="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2" for="inputSuccess">手机号</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control  error" id="phone" type="text" name="phone" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2" for="inputSuccess">类型</label>
+                                            <div class="col-lg-10">
+                                                <label class="checkbox-inline">
+                                                    <input type="radio" id="optionsRadios1" name="type" value="1" checked='true'> 学生
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="radio" id="optionsRadios2" name="type" value="2"> 企业用户
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="radio" id="optionsRadios3" name="type" value="3"> 教师
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-info" id="post" data-action="user/update" data-type="post"  data-successtxt="更新成功" data-failuretxt="更新失败">提交</button>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+        </section>
+
+        <section>
+            <div class="modal fade" tabindex="-1" id="delete-user-dialog" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+                 style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">用户</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-lg-12">
+                                <header class="panel-heading">
+                                    确定删除该用户
+                                </header>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button data-dismiss="modal" class="btn btn-default" type="button">取消</button>
+                            <button data-dismiss="modal" class="btn btn-success" type="button">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="../lib/initpage.js"></script>
+
+
+</body>
+</html>

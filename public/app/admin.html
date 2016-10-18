@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mosaddek">
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-    <link rel="shortcut icon" href="img/favicon.html">
+    <link rel="shortcut icon" href="../page/img/favicon.html">
     <title></title>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media
     queries -->
@@ -24,7 +24,7 @@
     <!--header start-->
     <header class="header white-bg">
         <!--logo start-->
-        <a href="appIndex.html" class="logo">后台管理系统<span></span></a>
+        <a href="../page/appIndex.html" class="logo">后台管理系统<span></span></a>
         <!--logo end-->
         <div class="top-nav ">
             <!--search & user info start-->
@@ -35,7 +35,7 @@
                 <!-- user login dropdown start-->
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <img alt="" src="img/avatar-mini4.jpg">
+                        <img alt="" src="../page/img/avatar-mini4.jpg">
                         <span class="username" id="username"></span>
                         <b class="caret"></b>
                     </a>
@@ -67,8 +67,8 @@
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="#user-list" data-toggle="nav">用户列表</a></li>
-                        <li><a class="" href="#add-user" data-toggle="nav">添加用户</a></li>
+                        <li><a class="" href="#user-user-list" data-toggle="nav">用户列表</a></li>
+                        <li><a class="" href="#user-add-user" data-toggle="nav">添加用户</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu active">
@@ -78,8 +78,19 @@
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="#app-list" data-toggle="nav">企业列表</a></li>
-                        <li><a class="" href="#app-list" data-toggle="nav">添加企业</a></li>
+                        <li><a class="" href="#company-company-list" data-toggle="nav">企业列表</a></li>
+                        <li><a class="" href="#company-add-company" data-toggle="nav">添加企业</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu active">
+                    <a href="javascript:;" class="">
+                        <i class="icon-book"></i>
+                        <span>招聘会</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="" href="#ocr-ocr-list" data-toggle="nav">招聘会</a></li>
+                        <li><a class="" href="#ocr-add-ocr" data-toggle="nav">添加招聘会</a></li>
                     </ul>
                 </li>
             </ul>
@@ -91,13 +102,26 @@
     <section id="main-content" style="height:100%;padding-top:60px;">
         <section class="wrapper" style="height:100%;margin-top:0;">
             <div id="user-list1" class="row ">
-                <iframe src="http://www.w3schools.com"  frameborder="0"></iframe>
+                <!--<iframe src="http://www.w3schools.com"  frameborder="0"></iframe>-->
             </div>
-            <div id="user-list" class="row ">
-                <iframe src="./userlist.html"  frameborder="0"></iframe>
+            <div id="user-user-list" class="row ">
+                <iframe src="user/user-list.html" frameborder="0"></iframe>
             </div>
-            <div id="add-user" class="row ">
-                <iframe src="./adduser.html"  frameborder="0"></iframe>
+            <div id="user-add-user" class="row ">
+                <iframe src="user/add-user.html" frameborder="0"></iframe>
+            </div>
+            <div id="company-add-company" class="row ">
+                <iframe src="company/add-company.html" frameborder="0"></iframe>
+            </div>
+            <div id="company-company-list" class="row ">
+                <iframe src="company/company-list.html" frameborder="0"></iframe>
+            </div>
+
+            <div id="ocr-ocr-list" class="row ">
+                <iframe src="ocr/ocr-list.html" frameborder="0"></iframe>
+            </div>
+            <div id="ocr-add-ocr" class="row ">
+                <iframe src="ocr/add-ocr.html" frameborder="0"></iframe>
             </div>
 
             <div class="row hide" id="app-list">
@@ -238,7 +262,7 @@
     </div><!-- /.modal-dialog -->
 </div>
 <!-- js placed at the end of the document so the pages load faster -->
-<script src='./js/initpage.js'></script>
+<script src='./lib/initpage.js'></script>
 </body>
 
 </html>
