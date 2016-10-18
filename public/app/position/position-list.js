@@ -16,21 +16,30 @@ define(function(require,exports,module){
     var optedit = '<button data-click="2"  class="btn btn-info btn-xs"  data-placement="top" data-toggle="tooltip" data-original-title="修改"'
         +'href="#update-user-dialog"'
         +'><i class="icon-edit "></i></button>';
-
+    var opteinfo = '<button data-click="2"  class="btn btn-info btn-xs"  data-placement="top" data-toggle="tooltip" data-original-title="修改"'
+        +'href="#update-user-dialog"'
+        +'><i class="icon-edit "></i></button>';
 
     var optArray = [optdel,optedit];
     //显示的值
     var filterArray = {
-        'username':null,
-        'phone':null,
-        'type':function(value){
-            if(value===2){
-                return  '企业用户';
-            }else if(value===3){
-                return '教师';
-            }else{
-                return  '学生';
+        'name':null,
+        'address':null,
+        'salary':null,
+        'desc':function(value){
+            if(value && value.length>30){
+                value = value.substring(0,30)+'...';
             }
+            return value||'';
+        },
+        'jobnature':function(value){
+            return value||'全职';
+        },
+        'education':function(value){
+            return value||'';
+        },
+        'company':function(value){
+            return value;
         }
     };
     function optHandler(type,item){
@@ -38,7 +47,7 @@ define(function(require,exports,module){
             $('#delete-user-dialog').modal('show');
             $('#delete-user-dialog').find('.btn-success').on('click',function(){
                 $.ajax({
-                    url:config.baseUrl+'user/delete',
+                    url:config.baseUrl+'position/delete',
                     data:{id:item.id},
                     type:'get',
                     xhrFields: {
@@ -55,11 +64,17 @@ define(function(require,exports,module){
             return;
         }
         $('#update-user-dialog').modal('show');
-        $('#username').val(item.username);
-        $('#phone').val(item.phone);
-        $('[name=type]').val([item.type+'']);
+        $('#name').val(item.name);
+        $('#id').val(item.id);
+        $('#address').val(item.address);
+        $('#salary').val(item.salary);
+        $('#jobnature').val(item.jobnature);
+        $('#education').val(item.education);
+        $('#company').val(item.company);
+        $('#companyId').val(item.companyId);
+        $('#desc').val(item.desc);
     }
-    var url = config.baseUrl+'user';
+    var url = config.baseUrl+'position';
     function dataFilter(data){
         // return data.data.list;
         return data?(data.data?(data.data.list?data.data.list:[]):[]):[];
@@ -93,6 +108,12 @@ define(function(require,exports,module){
                 page+=1;
             }
             fetch();
+        });
+        $('#fromDate').datepicker({
+            format:'yyyy/mm/dd'
+        });
+        $('#toDate').datepicker({
+            format:'yyyy/mm/dd'
         });
     }
         fetch();

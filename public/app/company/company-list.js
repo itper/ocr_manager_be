@@ -21,26 +21,22 @@ define(function(require,exports,module){
     var optArray = [optdel,optedit];
     //显示的值
     var filterArray = {
-        'username':null,
-        'phone':null,
-        'type':function(value){
-            if(value===2){
-                return  '企业用户';
-            }else if(value===3){
-                return '教师';
-            }else{
-                return  '学生';
-            }
-        }
+        'name':null,
+        'address':null,
+        'desc':null,
+        'type':null,
     };
     function optHandler(type,item){
         if(type===1){
             $('#delete-user-dialog').modal('show');
             $('#delete-user-dialog').find('.btn-success').on('click',function(){
                 $.ajax({
-                    url:config.baseUrl+'user/delete',
+                    url:config.baseUrl+'company/delete',
                     data:{id:item.id},
                     type:'get',
+                    xhrFields: {
+                        withCredentials: true
+                    },
                     success:function(data){
                         if(data.code===0){
                             location.reload();
@@ -52,13 +48,15 @@ define(function(require,exports,module){
             return;
         }
         $('#update-user-dialog').modal('show');
-        $('#username').val(item.username);
-        $('#phone').val(item.phone);
-        $('[name=type]').val([item.type+'']);
+        $('#name').val(item.name);
+        $('#address').val(item.address);
+        $('#desc').val(item.desc);
+        $('#id').val(item.id);
+        $('#type').val([item.type+'']);
     }
-    var url = config.baseUrl+'user';
+    var url = config.baseUrl+'company';
     function dataFilter(data){
-        return data.data.list;
+        return data?(data.data?(data.data.list?data.data.list:[]):[]):[];
     }
 
     function initGlobalListener(){
@@ -96,6 +94,9 @@ define(function(require,exports,module){
             url:url,
             data:{page:page,pageSize:pageSize,type:type},
             type:'get',
+            xhrFields: {
+                withCredentials: true
+            },
             success:function(data){
                 render(dataFilter(data));
             }

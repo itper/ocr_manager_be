@@ -16,21 +16,26 @@ define(function(require,exports,module){
     var optedit = '<button data-click="2"  class="btn btn-info btn-xs"  data-placement="top" data-toggle="tooltip" data-original-title="修改"'
         +'href="#update-user-dialog"'
         +'><i class="icon-edit "></i></button>';
-
+    var opteinfo = '<button data-click="2"  class="btn btn-info btn-xs"  data-placement="top" data-toggle="tooltip" data-original-title="修改"'
+        +'href="#update-user-dialog"'
+        +'><i class="icon-edit "></i></button>';
 
     var optArray = [optdel,optedit];
     //显示的值
     var filterArray = {
-        'username':null,
-        'phone':null,
-        'type':function(value){
-            if(value===2){
-                return  '企业用户';
-            }else if(value===3){
-                return '教师';
-            }else{
-                return  '学生';
+        'title':null,
+        'fromDate':function(value){
+            return new Date(value*1000).toLocaleString().split(' ')[0];
+        },
+        'toDate':function(value){
+            return new Date(value*1000).toLocaleString().split(' ')[0];
+        },
+        'address':null,
+        'content':function(value){
+            if(value.length>30){
+                value = value.substring(0,30)+'...';
             }
+            return value;
         }
     };
     function optHandler(type,item){
@@ -38,9 +43,12 @@ define(function(require,exports,module){
             $('#delete-user-dialog').modal('show');
             $('#delete-user-dialog').find('.btn-success').on('click',function(){
                 $.ajax({
-                    url:config.baseUrl+'user/delete',
+                    url:config.baseUrl+'ocr/delete',
                     data:{id:item.id},
                     type:'get',
+                    xhrFields: {
+                        withCredentials: true
+                    },
                     success:function(data){
                         if(data.code===0){
                             location.reload();
@@ -52,13 +60,18 @@ define(function(require,exports,module){
             return;
         }
         $('#update-user-dialog').modal('show');
-        $('#username').val(item.username);
-        $('#phone').val(item.phone);
-        $('[name=type]').val([item.type+'']);
+        $('#title').val(item.title);
+        $('#id').val(item.id);
+        $('#toDate').val(new Date(item.toDate*1000).toLocaleString().split(' ')[0]);
+        $('#address').val(item.address);
+        $('#content').val(item.content);
+        $('#fromDate').val(new Date(item.fromDate*1000).toLocaleString().split(' ')[0]);
     }
-    var url = config.baseUrl+'user';
+    var url = config.baseUrl+'ocr';
     function dataFilter(data){
-        return data.data.list;
+        // return data.data.list;
+        return data?(data.data?(data.data.list?data.data.list:[]):[]):[];
+
     }
 
     function initGlobalListener(){
@@ -89,6 +102,12 @@ define(function(require,exports,module){
             }
             fetch();
         });
+        $('#fromDate').datepicker({
+            format:'yyyy/mm/dd'
+        });
+        $('#toDate').datepicker({
+            format:'yyyy/mm/dd'
+        });
     }
         fetch();
     function fetch(){
@@ -96,6 +115,9 @@ define(function(require,exports,module){
             url:url,
             data:{page:page,pageSize:pageSize,type:type},
             type:'get',
+            xhrFields: {
+                withCredentials: true
+            },
             success:function(data){
                 render(dataFilter(data));
             }

@@ -59,8 +59,9 @@
                 body.appendChild(node);
             }
         };
-        body.appendChild(node);
+        // body.appendChild(node);
 
+        node.onload();
 
     }
     loadCss();
@@ -79,11 +80,12 @@
             // pageIndex = pageIndex.replace('-','/');
             console.log(pageIndex);
             seajs.config({
-                base:'../app/',
+                base:'/ocr_manager_be/public/app/',
                 alias:{
 
                 }
             });
+            seajs.use('lib/user_valid.js');
             seajs.use(pageIndex);
         };
         body.appendChild(node);

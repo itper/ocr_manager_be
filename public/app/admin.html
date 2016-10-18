@@ -20,6 +20,8 @@
 </head>
 
 <body style="height:100%">
+<script type="text/javascript" src="../page/js/jquery.min.js"></script>
+
 <section id="container" class="">
     <!--header start-->
     <header class="header white-bg">
@@ -93,6 +95,40 @@
                         <li><a class="" href="#ocr-add-ocr" data-toggle="nav">添加招聘会</a></li>
                     </ul>
                 </li>
+                <li class="sub-menu active">
+                    <a href="javascript:;" class="">
+                        <i class="icon-book"></i>
+                        <span>职位</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="" href="#position-position-list" data-toggle="nav">职位</a></li>
+                        <li><a class="" href="#position-add-position" data-toggle="nav">添加职位</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu active">
+                    <a href="javascript:;" class="">
+                        <i class="icon-book"></i>
+                        <span>统计</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="" href="#ocr-ocr-list" data-toggle="nav">签到情况</a></li>
+                        <li><a class="" href="#ocr-add-ocr" data-toggle="nav">添加问卷</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu active">
+                    <a href="javascript:;" class="">
+                        <i class="icon-book"></i>
+                        <span>系统设置</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+                        <li><a class="" href="#ocr-ocr-list" data-toggle="nav">权限设置</a></li>
+                        <li><a class="" href="#ocr-add-ocr" data-toggle="nav">修改密码</a></li>
+                        <li><a class="" href="#ocr-add-ocr" data-toggle="nav">导入</a></li>
+                    </ul>
+                </li>
             </ul>
             <!-- sidebar menu end-->
         </div>
@@ -123,7 +159,12 @@
             <div id="ocr-add-ocr" class="row ">
                 <iframe src="ocr/add-ocr.html" frameborder="0"></iframe>
             </div>
-
+            <div id="position-position-list" class="row ">
+                <iframe src="position/position-list.html" frameborder="0"></iframe>
+            </div>
+            <div id="position-add-position" class="row ">
+                <iframe src="position/add-position.html" frameborder="0"></iframe>
+            </div>
             <div class="row hide" id="app-list">
                 <div class="col-lg-12">
                     <section class="panel">

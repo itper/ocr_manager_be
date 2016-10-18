@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../page/assets/bootstrap-datepicker/css/datepicker.css">
+    <style>
+        .datepicker.dropdown-menu{
+            z-index:1050;
+        }
+    </style>
 </head>
 <body>
 
 <script type="text/javascript" src="../../page/js/jquery.min.js"></script>
-
+<script type="text/javascript" src="../../page/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
         <div class=" " id="user-list">
+
             <div class="col-lg-12">
                 <section class="panel">
                     <header class="panel-heading">
@@ -19,8 +26,11 @@
                         <tr>
                             <th>名称</th>
                             <th>地址</th>
-                            <th>简介</th>
+                            <th>薪资</th>
+                            <th>描述</th>
                             <th>类型</th>
+                            <th>学历要求</th>
+                            <th>企业</th>
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -57,7 +67,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title">企业</h4>
+                        <h4 class="modal-title">招聘会</h4>
                     </div>
                     <div class="modal-body">
                         <div class="col-lg-12">
@@ -75,30 +85,63 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <label class="control-label col-lg-2" for="inputSuccess">描述</label>
+                                            <div class="col-lg-10">
+                                                <textarea class="form-control" id="desc" cols="60" rows="5"></textarea>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2" for="inputSuccess">薪酬</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="salary" cols="60" rows="5"></input>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2" for="inputSuccess">工作类型</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="jobnature" cols="60" rows="5"></input>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2" for="inputSuccess">最低学历</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="education" cols="60" rows="5"></input>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-lg-2" for="inputSuccess">企业</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="company" cols="60" rows="5"></input>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group hide">
+                                            <label class="control-label col-lg-2" for="inputSuccess">企业ID</label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="companyId" cols="60" rows="5"></input>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group hide">
+                                            <label class="control-label col-lg-2" for="inputSuccess"></label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control  error" id="id" type="text" name="name" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
                                             <label class="control-label col-lg-2" for="inputSuccess">地址</label>
                                             <div class="col-lg-10">
                                                 <input class="form-control  error" id="address" type="text" name="phone" required="">
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="inputSuccess">简介</label>
-                                            <div class="col-lg-10">
-                                                <input class="form-control  error" id="desc" type="text" name="phone" required="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group hide">
-                                            <label class="control-label col-lg-2" for="inputSuccess">id</label>
-                                            <div class="col-lg-10">
-                                                <input class="form-control  error" id="id" type="text" name="phone" required="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-lg-2" for="inputSuccess">类型</label>
-                                            <div class="col-lg-10">
-                                                <input class="form-control  error" id="type" type="text" name="phone" required="">
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-info" id="post" data-action="company/update" data-type="post"  data-successtxt="更新成功" data-failuretxt="更新失败">提交</button>
+
+                                        <button class="btn btn-info" id="post" data-action="position/update" data-type="post"  data-successtxt="更新成功" data-failuretxt="更新失败">提交</button>
                                     </form>
                                 </div>
                             </section>
@@ -116,12 +159,12 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h4 class="modal-title">企业</h4>
+                            <h4 class="modal-title">招聘会</h4>
                         </div>
                         <div class="modal-body">
                             <div class="col-lg-12">
                                 <header class="panel-heading">
-                                    确定删除该企业
+                                    确定删除该改招聘会
                                 </header>
                             </div>
                         </div>
