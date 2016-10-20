@@ -18,7 +18,7 @@ define(function(require,exports,module){
         autoRefresh();
     };
     var t = 0;
-    var interval = 20;
+    var interval = 60;
 
     socket.on('sign-valid',function(data){
         if(data.code===currentCode){

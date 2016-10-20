@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47817068-e10a-41f5-851a-936a9cd130c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/index.appcache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/lib/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/sign/sign.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/sign/sign.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/user/add-cp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/app/user/add-tec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/page/js/jquery.qrcode.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/page/js/qrcode.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/page/js/socket.io.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/admin.html" afterPath="$PROJECT_DIR$/public/app/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/company/add-company.html" afterPath="$PROJECT_DIR$/public/app/company/add-company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/company/company-list.html" afterPath="$PROJECT_DIR$/public/app/company/company-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/index.js" afterPath="$PROJECT_DIR$/public/app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/lib/common-post.js" afterPath="$PROJECT_DIR$/public/app/lib/common-post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/lib/initpage.js" afterPath="$PROJECT_DIR$/public/app/lib/initpage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/lib/user_valid.js" afterPath="$PROJECT_DIR$/public/app/lib/user_valid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/login.html" afterPath="$PROJECT_DIR$/public/app/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/ocr/add-ocr.html" afterPath="$PROJECT_DIR$/public/app/ocr/add-ocr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/ocr/ocr-list.html" afterPath="$PROJECT_DIR$/public/app/ocr/ocr-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/ocr/ocr-list.js" afterPath="$PROJECT_DIR$/public/app/ocr/ocr-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/position/add-position.html" afterPath="$PROJECT_DIR$/public/app/position/add-position.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/position/position-list.html" afterPath="$PROJECT_DIR$/public/app/position/position-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/user/add-user.html" afterPath="$PROJECT_DIR$/public/app/user/add-user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/user/add-user.js" afterPath="$PROJECT_DIR$/public/app/user/add-user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/user/user-list.html" afterPath="$PROJECT_DIR$/public/app/user/user-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/user/user-list.js" afterPath="$PROJECT_DIR$/public/app/user/user-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/page/js/common-scripts.js" afterPath="$PROJECT_DIR$/public/page/js/common-scripts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/sign/sign.js" afterPath="$PROJECT_DIR$/public/app/sign/sign.js" />
     </list>
     <ignored path="ocr_be.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/admin.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
@@ -90,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sign.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/sign/sign.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+            <state relative-caret-position="340">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -232,10 +206,10 @@
         <option value="$PROJECT_DIR$/public/app/sign/sign.html" />
         <option value="$PROJECT_DIR$/public/app/lib/user_valid.js" />
         <option value="$PROJECT_DIR$/public/app/index.js" />
-        <option value="$PROJECT_DIR$/public/app/sign/sign.js" />
         <option value="$PROJECT_DIR$/public/app/ocr/ocr-list.html" />
         <option value="$PROJECT_DIR$/public/app/ocr/ocr-list.js" />
         <option value="$PROJECT_DIR$/public/app/admin.html" />
+        <option value="$PROJECT_DIR$/public/app/sign/sign.js" />
       </list>
     </option>
   </component>
@@ -396,6 +370,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_manager_be" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr_manager_be" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ocr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -506,12 +502,12 @@
       <workItem from="1476414712929" duration="528000" />
       <workItem from="1476415460007" duration="9583000" />
       <workItem from="1476674027630" duration="38367000" />
-      <workItem from="1476843851347" duration="31533000" />
+      <workItem from="1476843851347" duration="32126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80011000" />
+    <option name="totallyTimeSpent" value="80604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="6" />
@@ -927,14 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/sign/sign.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/ocr/ocr-list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -954,14 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/ocr/ocr-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -992,6 +972,22 @@
             <marker date="1476948963000" expanded="true" signature="627:641" placeholder="..." />
             <marker date="1476948963000" expanded="true" signature="678:692" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/ocr/ocr-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/sign/sign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
