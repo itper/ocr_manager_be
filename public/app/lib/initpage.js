@@ -36,28 +36,26 @@
         node.setAttribute('src',staticPath+'js/jquery.js');
         node.onload = function(){
             loadSea();
-            var t = 0;
-            var jsArray = [
-                'js/bootstrap.min.js',
-                'js/jquery.scrollTo.min.js',
-                'js/jquery.nicescroll.js',
-                'js/common-scripts.js',
-                'js/bootstrap-typehead.js',
-            ];
-            for(var i=0;i<jsArray.length;i++){
-                var node = document.createElement('script');
-                node.setAttribute('src',staticPath+jsArray[i]);
-                node.onload = function(){
-                    t++;
-                    if(t===jsArray.length){
+            // var t = 0;
+            // var jsArray = [
+            //     'js/bootstrap.min.js',
+            //     'js/jquery.scrollTo.min.js',
+            //     'js/jquery.nicescroll.js',
+            //     'js/common-scripts.js',
+            //     'js/bootstrap-typehead.js',
+            // ];
+            // for(var i=0;i<jsArray.length;i++){
+            //     var node = document.createElement('script');
+            //     node.setAttribute('src',staticPath+jsArray[i]);
+            //     node.onload = function(){
+            //         t++;
+            //         if(t===jsArray.length){
+            //
 
-                        $('body').tooltip({
-                            selector: '[data-toggle=tooltip]'
-                        });
-                    }
-                };
-                body.appendChild(node);
-            }
+            //         }
+            //     };
+            //     body.appendChild(node);
+            // }
         };
         // body.appendChild(node);
 
@@ -84,6 +82,20 @@
                 alias:{
 
                 }
+            });
+
+            seajs.use(
+                [
+                    '/ocr_manager_be/public/page/js/bootstrap.min.js',
+                    '/ocr_manager_be/public/page/js/jquery.scrollTo.min.js',
+                    '/ocr_manager_be/public/page/js/jquery.nicescroll.js',
+                    '/ocr_manager_be/public/page/js/bootstrap-typehead.js'
+                ],function(){
+                seajs.use('/ocr_manager_be/public/page/js/common-scripts.js',function(){
+                    $('body').tooltip({
+                        selector: '[data-toggle=tooltip]'
+                    });
+                })
             });
             seajs.use('lib/user_valid.js');
             seajs.use(pageIndex);

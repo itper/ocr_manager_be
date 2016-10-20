@@ -9,16 +9,25 @@ define(function(require,exports,module){
             var data = {};
             for(var i=0;i<input.length; i++){
                 var el = input[i];
+                if($(el).data('disable')){
+                    break;
+                }
                 if(el.type==='radio'){
                     data[el.name] = $('[name='+el.name+']:checked').val();
+                }else if(($(el).data('type')==='date')){
+                    data[el.id] = new Date(el.value).getTime()/1000;
+                }else if($(el).data('type')==='auto'){
+                    var key = $(el).data('key');
+                    key = key.split(',');
+                    for(var k=0;k<key.length;k++){
+                        data[key[k].split(':')[0]] = $(el).data('item')[key[k].split(':')[1]];
+                    }
                 }else{
                     if(el.id)
                         data[el.id] = el.value;
                 }
 
-                if($(el).data('type')==='date'){
-                    data[el.id] = new Date(el.value).getTime()/1000;
-                }
+
             }
             data.pwd = '123456';
             $.ajax({

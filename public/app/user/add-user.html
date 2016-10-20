@@ -1,4 +1,5 @@
 <!doctype html>
+<!--<html lang="en"  manifest="../index.appcache">-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,17 +17,31 @@
                 <form class="form-horizontal tasi-form" id="add-user-form">
 
                     <div class="form-group">
-                        <label class="control-label col-lg-2" for="inputSuccess">名称</label>
+                        <label class="control-label col-lg-2" for="inputSuccess">姓名</label>
                         <div class="col-lg-10">
-                            <input class="form-control  error" id="username" type="text" name="name" required="">
+                            <input class="form-control  error" id="name" type="text" name="name" required="" autocomplete="off">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label col-lg-2" for="inputSuccess">手机号</label>
                         <div class="col-lg-10">
-                            <input class="form-control  error" id="phone" type="text" name="phone" required="">
+                            <input class="form-control  error" id="phone" type="text" name="phone" required="" autocomplete="off">
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="control-label col-lg-2" id="number-label" for="inputSuccess">学号</label>
+                        <div class="col-lg-10">
+                            <input class="form-control  error" id="number" type="text" name="phone" required="" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group hide">
+                        <label class="control-label col-lg-2" id="" for="inputSuccess">所属企业</label>
+                        <div class="col-lg-10">
+                            <input id="companyId" data-disable=true data-type="auto" data-key="companyId:id,company:name" class="form-control" style="z-index: 1051;" type="text" data-provide="typeahead" autocomplete="off">
+                        </div>
+                    </div>
+
+
 
                     <div class="form-group">
                         <label class="control-label col-lg-2" for="inputSuccess">类型</label>

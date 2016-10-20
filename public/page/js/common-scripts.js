@@ -1,7 +1,11 @@
 var Script = function () {
 
     $('#sidebar .sub-menu li > a').click(function(e){
+
         if ($('#sidebar > ul').is(":visible") === true) {
+            if($('#main-content').css('margin-left')==='180px'){
+                return;
+            }
             $('#main-content').css({
                 'margin-left': '0px'
             });

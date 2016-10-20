@@ -18,21 +18,48 @@ define(function(require,exports,module){
         +'><i class="icon-edit "></i></button>';
 
 
-    var optArray = [optdel,optedit];
-    //显示的值
-    var filterArray = {
-        'username':null,
-        'phone':null,
-        'type':function(value){
-            if(value===2){
-                return  '企业用户';
-            }else if(value===3){
-                return '教师';
-            }else{
-                return  '学生';
+    var titleArray;
+    var optArray;
+    var filterArray;
+    configPage();
+    function configPage(){
+        titleArray = ['名称',	'电话',	'学号',	'类型',	'操作'];
+        optArray = [optdel,optedit];
+        filterArray = {
+            'username':null,
+            'phone':null,
+            'number':null,
+            'type':function(value){
+                if(value===2){
+                    return  '企业用户';
+                }else if(value===3){
+                    return '教师';
+                }else{
+                    return  '学生';
+                }
             }
+        };
+        if(type===2){
+            filterArray = {
+                'username':null,
+                'phone':null,
+                'number':null,
+                'type':function(value){
+                    if(value===2){
+                        return  '企业用户';
+                    }else if(value===3){
+                        return '教师';
+                    }else{
+                        return  '学生';
+                    }
+                },
+                'company':function(val){
+                    return val||'';
+                }
+            };
+            titleArray = ['名称',	'电话',	'学号',	'类型',	'所在企业',	'操作'];
         }
-    };
+    }
     function optHandler(type,item){
         if(type===1){
             $('#delete-user-dialog').modal('show');
@@ -57,6 +84,7 @@ define(function(require,exports,module){
         $('#update-user-dialog').modal('show');
         $('#username').val(item.username);
         $('#phone').val(item.phone);
+        $('#number').val(item.number);
         $('[name=type]').val([item.type+'']);
     }
     var url = config.baseUrl+'user';
@@ -76,6 +104,7 @@ define(function(require,exports,module){
             $('#select-type').find('a').removeClass('active');
             $(e.currentTarget).addClass('active');
             type = $(e.currentTarget).data('val');
+            configPage();
             page = 0;
             fetch();
         });
@@ -111,6 +140,14 @@ define(function(require,exports,module){
     }
 
     function render(list){
+        var title = $($('#list').parent().children('thead').children('tr')[0]);
+        var content='';
+        for (var k in titleArray){
+            var t = titleArray[k];
+            content+='<th>'+t+'</th>';
+        }
+        title.empty();
+        title.append($(content));
         $('#current-page').text(page+1);
         listEl.empty();
         for(var item in list){

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%">
+<html lang="en" style="height:100%" manifest="index.appcache">
 
 <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <meta name="author" content="Mosaddek">
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="../page/img/favicon.html">
-    <title></title>
+    <title>后台管理系统</title>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media
     queries -->
     <!--[if lt IE 9]>
@@ -19,7 +19,7 @@
     <![endif]-->
 </head>
 
-<body style="height:100%">
+<body style="height:100%;display: none;">
 <script type="text/javascript" src="../page/js/jquery.min.js"></script>
 
 <section id="container" class="">
@@ -48,9 +48,9 @@
                     <!-- 隐藏的div,点击用户头像显示，目前没有加次功能，待开发 -->
                     <ul class="dropdown-menu extended logout">
                         <div class="log-arrow-up"></div>
-                        <li><a href="#"><i class=" "></i></a></li>
-                        <li><a href="/client/spaceVer2.0/admin.html"><i class="icon-cog"></i> Settings</a></li>
-                        <li><a href="#"><i class=""></i> </a></li>
+                        <li><a href="http://ocr.itper.xyz/user/logout"><i class="  icon-signout"></i>退出</a></li>
+                        <li><a href="/client/spaceVer2.0/admin.html"><i class="icon-user"></i>个人信息</a></li>
+                        <li><a href="#"><i class=" icon-info"></i> 关于</a></li>
                         <li><a id="logout" href="#"><i class="icon-key"></i> Log Out</a></li>
                     </ul>
                 </li>
@@ -64,7 +64,7 @@
     <aside>
         <div id="sidebar" class="nav-collapse " tabindex="5000" style="overflow: hidden; outline: none;">
             <!-- sidebar menu start-->
-            <ul class="sidebar-menu">
+            <ul class="sidebar-menu"  style="display:none;">
                 <li class="sub-menu active">
                     <a href="javascript:;" class="">
                         <i class="icon-user"></i>
@@ -144,29 +144,32 @@
                 <!--<iframe src="http://www.w3schools.com"  frameborder="0"></iframe>-->
             </div>
             <div id="user-user-list" class="row ">
-                <iframe src="user/user-list.html" frameborder="0"></iframe>
+                <iframe  frameborder="0"></iframe>
             </div>
             <div id="user-add-user" class="row ">
-                <iframe src="user/add-user.html" frameborder="0"></iframe>
+                <iframe  frameborder="0"></iframe>
             </div>
             <div id="company-add-company" class="row ">
-                <iframe src="company/add-company.html" frameborder="0"></iframe>
+                <iframe  frameborder="0"></iframe>
             </div>
             <div id="company-company-list" class="row ">
-                <iframe src="company/company-list.html" frameborder="0"></iframe>
+                <iframe  frameborder="0"></iframe>
             </div>
 
             <div id="ocr-ocr-list" class="row ">
-                <iframe src="ocr/ocr-list.html" frameborder="0"></iframe>
+                <iframe  frameborder="0"></iframe>
             </div>
             <div id="ocr-add-ocr" class="row ">
-                <iframe src="ocr/add-ocr.html" frameborder="0"></iframe>
+                <iframe  frameborder="0"></iframe>
             </div>
             <div id="position-position-list" class="row ">
-                <iframe src="position/position-list.html" frameborder="0"></iframe>
+                <iframe  frameborder="0"></iframe>
             </div>
             <div id="position-add-position" class="row ">
-                <iframe src="position/add-position.html" frameborder="0"></iframe>
+                <iframe  frameborder="0"></iframe>
+            </div>
+            <div id="sign-sign" class="row ">
+                <iframe  frameborder="0"></iframe>
             </div>
             <div class="row hide" id="app-list">
                 <div class="col-lg-12">

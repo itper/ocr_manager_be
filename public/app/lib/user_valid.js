@@ -8,7 +8,6 @@ define(function() {
     // $(document).on('cookieUpdate',parse);
     $(document).ajaxSuccess(
         function(event, xhr, settings){
-            console.log('123');
             var data = null;
             try{
                 data = JSON.parse(xhr.responseText);

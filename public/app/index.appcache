@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# Tue Oct 18 2016 19:15:41 GMT+0800 (CST)
+CACHE:
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/js/jquery.min.js
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/css/bootstrap.min.css
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/css/bootstrap-reset.css
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/assets/font-awesome/css/font-awesome.css
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/css/style.css
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/css/admin.css
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/js/jquery.scrollTo.min.js
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/js/jquery.nicescroll.js
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/js/common-scripts.js
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/js/bootstrap-typehead.js
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/assets/font-awesome/font/fontawesome-webfontf77b.woff?v=3.2.1
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/assets/bootstrap-datepicker/css/datepicker.css
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/css/style-responsive.css
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/js/sea.js
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/assets/bootstrap-datepicker/js/bootstrap-datepicker.js
+http://manager.ocr.itper.xyz/ocr_manager_be/public/page/js/bootstrap.min.js
+
+
+
+NETWORK:
+*

@@ -1,5 +1,6 @@
 define(function(require,exports,module){
     var config = require('../global/config');
+    var Sign = require('../sign/sign');
     require('../lib/common-post').init(function(){
         $('#update-user-dialog').modal('hide');
         location.reload();
@@ -16,11 +17,11 @@ define(function(require,exports,module){
     var optedit = '<button data-click="2"  class="btn btn-info btn-xs"  data-placement="top" data-toggle="tooltip" data-original-title="修改"'
         +'href="#update-user-dialog"'
         +'><i class="icon-edit "></i></button>';
-    var opteinfo = '<button data-click="2"  class="btn btn-info btn-xs"  data-placement="top" data-toggle="tooltip" data-original-title="修改"'
+    var optqrcode = '<button data-click="3"  class="btn btn-primary btn-xs"  data-placement="top" data-toggle="tooltip" data-original-title="签到二维码"'
         +'href="#update-user-dialog"'
-        +'><i class="icon-edit "></i></button>';
+        +'><i class="icon-qrcode "></i></button>';
 
-    var optArray = [optdel,optedit];
+    var optArray = [optdel,optedit,optqrcode];
     //显示的值
     var filterArray = {
         'title':null,
@@ -38,7 +39,22 @@ define(function(require,exports,module){
             return value;
         }
     };
+    var dialog = $('#qrcode-dialog');
+
+    dialog.on('shown.bs.modal',function(){
+        Sign.resume(dialog.data('ocr').id);
+    });
+    dialog.on('hide.bs.modal',function(){
+        Sign.pause();
+    });
+
     function optHandler(type,item){
+        if(type===3){
+            dialog.modal('show');
+            dialog.data('ocr',item);
+
+            return;
+        }
         if(type===1){
             $('#delete-user-dialog').modal('show');
             $('#delete-user-dialog').find('.btn-success').on('click',function(){

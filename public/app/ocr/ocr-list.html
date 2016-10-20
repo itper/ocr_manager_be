@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"  manifest="../index.appcache">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -10,7 +10,8 @@
         }
     </style>
 </head>
-<body>
+<body style="display: none;">
+
 
 <script type="text/javascript" src="../../page/js/jquery.min.js"></script>
 <script type="text/javascript" src="../../page/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
@@ -146,6 +147,39 @@
                         <div class="modal-footer">
                             <button data-dismiss="modal" class="btn btn-default" type="button">取消</button>
                             <button data-dismiss="modal" class="btn btn-success" type="button">确定</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="modal fade" tabindex="-1" id="qrcode-dialog" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+                 style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">签到二维码.</h4>
+                        </div>
+
+
+                        <div id="qrcode-container" style="padding:20px;position:relative;">
+
+
+                            <div id="qrcode-1" style="height: 300px;width: 100%;  margin: 0 auto;position:absolute;top:0;left:0;">
+
+                                <div class="logo" style="margin: 0 auto;width:100px;margin-top:100px;">
+                                    <i class="icon-download" style="font-size: 100px;"></i>
+                                </div>
+                            </div>
+                            <div id="qrcode" style="height: 300px; width: 300px;  margin: 0 auto;position: relative;z-index:1000">
+
+                            </div>
+
+                            <div style="text-align:center;">
+                                <h3></h3>
+                                <h6></h6>
+                            </div>
                         </div>
                     </div>
                 </div>
