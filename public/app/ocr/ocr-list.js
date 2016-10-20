@@ -48,6 +48,13 @@ define(function(require,exports,module){
         Sign.pause();
     });
 
+    window.onblur = function(){
+        window.pause()
+    }
+    window.pause = function(){
+        dialog.modal('hide');
+    };
+
     function optHandler(type,item){
         if(type===3){
             dialog.modal('show');
